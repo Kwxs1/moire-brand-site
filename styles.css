@@ -381,6 +381,7 @@
     justify-content: center;
     color: white;
     background-image: linear-gradient(to right, #00ddbe 0%, #fc00ff);
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1100px) { /* Mobile Responsiveness */
@@ -397,6 +398,7 @@
     .main__image--container {
         display: flex;
         justify-content: center;
+        background-repeat: no-repeat;
     }
 
     .main__iamge--card {
@@ -428,6 +430,7 @@
     .main__image--card {
         width: 500px;
         height: 250px;
+        background-repeat: no-repeat;
     }
 
     .fa-users, .fa-shirt {
