@@ -13,7 +13,7 @@
 
 /* Navbar Section */
 .navbar {
-    background: #131313;
+    background: #e4e2dd;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -36,8 +36,9 @@
 }
 
 #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ffbfbf 16%, #fddb91 100%);
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -58,11 +59,12 @@
 }
 
 .navbar__item {
-    height: 80px;
+    height: 50px;
 }
 
 .navbar__links {
-    color: white;
+    color: black;
+    accent-color: #e4e2dd;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,14 +93,13 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #BA5370;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F4E2D8, #BA5370);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F4E2D8, #BA5370); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: #babab7;  /* fallback for old browsers */
     transition: all 0.3s ease;
+    color: black;
 }
 
 .navbar__links:hover {
-    color: #7a2661;
+    color: #babab7;
     transition: all 0.3s ease;
 }
 
@@ -126,7 +127,7 @@
     }
 
    .navbar__menu.active {
-    background: #131313;
+    background: #e4e2dd;
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -144,7 +145,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: white;
+        background: black;
         display: block;
         cursor: pointer;
     }
@@ -195,13 +196,15 @@
 
 /* Hero Section */
 .hero {
-    background: #000000;
+    background: #e4e2dd;
     background:linear-gradient(to right #161616 #000000);
     padding: 150px 0;
-    background-image: url(/images/goku.gif);
+    background-image: url(/images/newmoths2.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 95%;
+    padding-top: 250px;
+    
     
 }
 
@@ -220,13 +223,14 @@
 .hero__heading {
     font-size: 100px;
     margin-bottom: 24px;
-    color: white;
+    color: #e4e2dd;
 }
 
 .hero__heading span {
-    background: #BA5370;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F4E2D8, #BA5370);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F4E2D8, #BA5370); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -238,10 +242,8 @@
 .hero__description {
     font-size: 60px;
     margin: 0 auto;
-    color: white;
-    background: #BA5370;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffbfbf 16%, #fddb91 100%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffbfbf, #fddb91); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    color: #e4e2dd;
+    background: #e4e2dd;  
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -251,7 +253,7 @@
 }
 
 .highlight {
-    border-bottom: 4px solid rgb(132, 0, 255)
+    border-bottom: 4px solid rgb(0, 0, 0)
 }
 
 @media screen and (max-width: 768px){ /* Mobile Responsiveness */
@@ -267,7 +269,7 @@
 /* Main/About Section */
 
 .main {
-    background-color: #131313;
+    background-color: #babab7;
     padding: 10rem 0;
 }
 
@@ -285,14 +287,16 @@
 }
 
 .main__content {
-    color:white;
+    color:#e3e3db;
     width: 100%;
+    padding-left: 100px;
 }
 
 .main__content h1 {
     font-size: 2rem;
-    background-color: #fe3b6f;
-    background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -307,9 +311,9 @@
     font-size: 4rem;
     margin: 0 auto;
     color: white;
-    background: #BA5370;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffbfbf 16%, #fddb91 100%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffbfbf, #fddb91); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -322,13 +326,12 @@
  margin-top: 1rem;
  font-size: 2rem;
  font-weight: 700;
+ color: black;
 }
 
 .main__button {
     font-size: 1.8rem;
-    background: #BA5370;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F4E2D8, #BA5370);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F4E2D8, #BA5370); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    background: #e3e3db;     
     padding: 20px 60px;
     border: none;
     border-radius: 10px;
@@ -342,7 +345,7 @@
 .main__button a {
     position: relative;
     z-index: 2;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -353,13 +356,14 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #BA5370;
+    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
     transition: all 0.35s;
     border-radius: 4px;
 }
 
 .main__button:hover {
-    color: white;
+    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
 }
 
 .main__button:hover:after {
@@ -367,7 +371,6 @@
 }
 
 .main__image--container {
-    background-image: url('/images/moire_header.png');
     text-align: center;
 }
 
@@ -380,7 +383,6 @@
     flex-direction: column;
     justify-content: center;
     color: white;
-    background-image: linear-gradient(to right, #00ddbe 0%, #fc00ff);
     background-repeat: no-repeat;
 }
 
@@ -390,9 +392,13 @@
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 50%;
         margin: 0 auto;
         height: 90%;
+    }
+
+    .main__content {
+        padding-right: 110px;
     }
 
     .main__image--container {
@@ -404,11 +410,14 @@
     .main__iamge--card {
         height: 425px;
         width: 425px;
+        padding: 100rem 100rem;
     }
+
 
    .main__content {
     text-align: center;
     margin-bottom: 4rem;
+    padding-left: 125px;
    }
 
    .main__content h1 {
@@ -433,10 +442,6 @@
         background-repeat: no-repeat;
     }
 
-    .fa-users, .fa-shirt {
-        font-size: 4rem;
-    }
-
     .main__content h1 {
         font-size: 1rem;
         margin-top: 3rem;
@@ -458,7 +463,7 @@
 
 /* Designs Section */
 .designs {
-    background: #131313;
+    background: #e3e3db;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -468,8 +473,7 @@
 }
 
 .designs h1 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ffbfbf 16%, #fddb91 100%);
+    background: black;  /* fallback for old browsers */
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -486,7 +490,7 @@
     grid-template-rows: 1fr;
 }
 
-.designs__card {
+.designs__card--shirt {
     margin: 10px;
     height: 425px;
     width: 300px;
@@ -494,44 +498,129 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
-    background: #E8CBC0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
+    background-image: url(/images/moire_model.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     transition: 0.3s ease-in;
 }
 
-.designs__card h2 {
-    text-align: center;
+.designs__card--shirt h2 {
+    padding-left:10px;
+    text-align: left;
+    padding-top: 300px;
 }   
 
-.designs__card p {
-    text-align: center;
-    margin-top: 24px;
-    font-size: 20px;
+.designs__card--shirt p {
+    text-align: left;
+    padding-left:10px;
+    margin-top: 5px;
+    font-size: 20x;
 }
 
-.designs__button {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-}
-
-.designs__card button {
-    color: white;
-    padding: 14px 24px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #131313;
-    font-size: 1rem;
-}
-
-.designs__card button:hover {
+.designs__card--shirt:hover {
+    transform: scale(1.075);
+    transition: o.3s ease-in;
     cursor: pointer;
 }
 
-.designs__card:hover {
+.designs__card--hoodie {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    background-image: url(/images/moire_model.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    transition: 0.3s ease-in;
+}
+
+.designs__card--hoodie h2 {
+    padding-left:10px;
+    text-align: left;
+    padding-top: 300px;
+}   
+
+.designs__card--hoodie p {
+    text-align: left;
+    padding-left:10px;
+    margin-top: 5px;
+    font-size: 20x;
+}
+
+.designs__card--hoodie:hover {
+    transform: scale(1.075);
+    transition: o.3s ease-in;
+    cursor: pointer;
+}
+
+.designs__card--jacket {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    background-image: url(/images/moire_model.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.3s ease-in;
+}
+
+.designs__card--jacket h2 {
+    padding-left:10px;
+    text-align: left;
+    padding-top: 300px;
+}   
+
+.designs__card--jacket p {
+    text-align: left;
+    padding-left:10px;
+    margin-top: 5px;
+    font-size: 20x;
+}
+
+.designs__card--jacket:hover {
+    transform: scale(1.075);
+    transition: o.3s ease-in;
+    cursor: pointer;
+}
+
+.designs__card--accesories {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    background-image: url(/images/moire_model.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.3s ease-in;
+}
+
+.designs__card--accesories h2 {
+    padding-left:10px;
+    text-align: left;
+    padding-top: 300px;
+}   
+
+.designs__card--accesories p {
+    text-align: left;
+    padding-left:10px;
+    margin-top: 5px;
+    font-size: 20x;
+}
+
+.designs__card--accesories:hover {
     transform: scale(1.075);
     transition: o.3s ease-in;
     cursor: pointer;
@@ -560,7 +649,7 @@
 }
 
 #footer__logo {
-    color: white;
+    color: #e3e3dc;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -592,23 +681,23 @@
 
 .footer__link--items h2 {
     margin-bottom: 16px;
-    color: white;
+    color: #e3e3dc;
 }
 
 .footer__link--items a {
-    color: white;
+    color: #e3e3dc;
     text-decoration: none;
     margin-bottom: 0.5rem;
     transition: 0.3 ease-out;
 }
 
 .footer__link--items a:hover {
-    color: #9122cc;
+    color: #babab7;
     transition: 0.3 ease-out;
 }
 
 .social__icons--links {
-    color: white;
+    color: #e3e3dc;
     font-size: 24px;
 }
 
@@ -635,7 +724,7 @@
 }
 
 .website__rights {
-    color: white;
+    color: #e3e3dc;
 }
 
 @media screen and (max-width: 820px) {  /* Mobile Responsiveness */
@@ -661,6 +750,10 @@
 
     .social__media {
         padding-right: 9rem;
+    }
+
+    .social__icons {
+        padding-right: 245px;
     }
 }
 

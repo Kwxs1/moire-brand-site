@@ -1,6 +1,7 @@
 const menu = document.querySelector('#mobile-menu'); //var controlling drop down menu
 const menuLinks = document.querySelector('.navbar__menu'); //var controlling link buttons
 const navLogo = document.querySelector('#navbar__logo');
+const hero = document.querySelector('#home');
 
 // Display Mobile Menu
 const mobileMenu = () => { //arrow function
