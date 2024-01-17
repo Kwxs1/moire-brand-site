@@ -3,17 +3,22 @@
     height:100%;
 }
 
+@font-face {
+    font-family: louisFont; 
+    src: url(/fonts//Intrepid.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: louisFont; 
     scroll-behavior: smooth;
 }
 
 /* Navbar Section */
 .navbar {
-    background: #e4e2dd;
+    background: #000000;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -26,19 +31,16 @@
 
 .navbar__container {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     height: 80px;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 0 50px;
 }
 
 #navbar__logo {
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-color: white;  
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -46,6 +48,7 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     display: flex;
+    padding-left: 627px;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
@@ -59,16 +62,15 @@
 }
 
 .navbar__item {
-    height: 50px;
+    height: 30px;
 }
 
 .navbar__links {
-    color: black;
-    accent-color: #e4e2dd;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 125px;
+    width: 110px;
     text-decoration: none;
     height: 100%;
     transition: all 0.3s ease;
@@ -92,15 +94,10 @@
     width: 100%;
     border: none;
     outline: none;
-    border-radius: 4px;
-    background: #babab7;  /* fallback for old browsers */
+    border-radius: 50px;
+    background: #babab7; 
     transition: all 0.3s ease;
     color: black;
-}
-
-.navbar__links:hover {
-    color: #babab7;
-    transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 960px){ /* Mobile Responsiveness */
@@ -145,7 +142,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: black;
+        background: white;
         display: block;
         cursor: pointer;
     }
@@ -159,10 +156,15 @@
         padding: 2rem;
         width: 100%;
         display: table;
+        color:black;
     }
 
     .navbar__button {
         padding-bottom: 2rem;
+    }
+
+    .navbar__button:hover {
+        transform: scale(1.075);
     }
 
     .button {
@@ -196,16 +198,13 @@
 
 /* Hero Section */
 .hero {
-    background: #e4e2dd;
-    background:linear-gradient(to right #161616 #000000);
+    background: black;
     padding: 150px 0;
-    background-image: url(/images/newmoths2.gif);
+    background-image: url(/images/newflyingmoths.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 95%;
+    background-size:100%;
     padding-top: 250px;
-    
-    
 }
 
 .hero__container {
@@ -227,10 +226,7 @@
 }
 
 .hero__heading span {
-    background: #BBD2C5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-     
+    background: #babab7;  /* fallback for old browsers */
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -253,7 +249,7 @@
 }
 
 .highlight {
-    border-bottom: 4px solid rgb(0, 0, 0)
+    border-bottom: 2px solid rgb(255, 255, 255)
 }
 
 @media screen and (max-width: 768px){ /* Mobile Responsiveness */
@@ -264,12 +260,16 @@
     .hero__description {
         font-size: 40px;
     }
+
+    .hero {
+        background-size: 155%;
+    }
 }
 
 /* Main/About Section */
 
 .main {
-    background-color: #babab7;
+    background-color: #e3e3db;
     padding: 10rem 0;
 }
 
@@ -310,10 +310,8 @@
 .main__content h2 {
     font-size: 4rem;
     margin: 0 auto;
-    color: white;
-    background: #BBD2C5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    color: #babab7;
+    background: #babab7;  
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -331,10 +329,10 @@
 
 .main__button {
     font-size: 1.8rem;
-    background: #e3e3db;     
+    background: #babab7;     
     padding: 20px 60px;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
@@ -356,14 +354,12 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
     transition: all 0.35s;
     border-radius: 4px;
 }
 
 .main__button:hover {
-    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    transform: scale(1.175);
 }
 
 .main__button:hover:after {
@@ -382,7 +378,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: #e3e3db;
     background-repeat: no-repeat;
 }
 
@@ -469,7 +465,9 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 10rem 0;
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+    background-size: 100%;
 }
 
 .designs h1 {
@@ -488,6 +486,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    transform: scale(1.075);
 }
 
 .designs__card--shirt {
@@ -765,4 +764,14 @@
     }
 }
 
-
+/* Scroll Animations */
+@media (prefers-reduced-motion: no-preference) {
+    .main__content {
+        opacity: 0;
+        transition: all 1.5s;
+    }
+  }
+  
+.show {
+    opacity: 1;
+}

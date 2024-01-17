@@ -3,6 +3,16 @@ const menuLinks = document.querySelector('.navbar__menu'); //var controlling lin
 const navLogo = document.querySelector('#navbar__logo');
 const hero = document.querySelector('#home');
 
+// Create scroll animations
+const check = (entries) => entries.forEach(entry => {
+    entry.target.classList.toggle('show', entry.isIntersecting);
+  });
+  
+  const Obs = new IntersectionObserver(check);
+  document.querySelectorAll(".main__content").forEach((el) => Obs.observe(el));
+
+
+
 // Display Mobile Menu
 const mobileMenu = () => { //arrow function
     menu.classList.toggle('is-active');
