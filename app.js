@@ -2,8 +2,51 @@ const menu = document.querySelector('#mobile-menu'); //var controlling drop down
 const menuLinks = document.querySelector('.navbar__menu'); //var controlling link buttons
 const navLogo = document.querySelector('#navbar__logo');
 const hero = document.querySelector('#home');
+const navbarLinks = document.querySelectorAll('.navbar__links');
+const navCont = document.querySelector('.navbar__container');
+const navBtn = document.querySelector('.navbar__button a');
+const magnifyer = document.querySelector('.fa-magnifying-glass');
 
-// Create scroll animations
+// navbar hover 
+const navHover = () => {
+    navCont.classList.add('is-active');
+    navLogo.classList.add('is-active');
+    navbarLinks.forEach(navbarLinks => {
+        navbarLinks.classList.add('is-active');
+    });
+    navBtn.classList.add('is-active');
+    magnifyer.classList.add('is-active');
+}
+
+const navUnHover = () => {
+    navCont.classList.remove('is-active');
+    navLogo.classList.remove('is-active');
+    navbarLinks.forEach(navbarLinks => {
+        navbarLinks.classList.remove('is-active');
+    });
+    navBtn.classList.remove('is-active');
+    magnifyer.classList.remove('is-active');
+}
+
+
+// craete navbar scroll animation
+const stickyNav = () => {
+    if (window.scrollY >= 100) {
+        navHover();
+        navCont.removeEventListener('mouseover', navHover);
+        navCont.removeEventListener('mouseout', navUnHover);
+    } else {
+        navUnHover();
+        navCont.addEventListener('mouseover', navHover);
+        navCont.addEventListener('mouseout', navUnHover);
+
+    }
+}
+
+window.addEventListener('scroll', stickyNav);
+
+
+// Create main & features secitons scroll animations
 const check = (entries) => entries.forEach(entry => {
     entry.target.classList.toggle('show', entry.isIntersecting);
   });
