@@ -28,6 +28,8 @@ const navUnHover = () => {
     magnifyer.classList.remove('is-active');
 }
 
+navCont.addEventListener('mouseover', navHover);
+navCont.addEventListener('mouseout', navUnHover);
 
 // craete navbar scroll animation
 const stickyNav = () => {
