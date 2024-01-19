@@ -413,9 +413,10 @@ input::-webkit-search-cancel-button {
 
 .main__button {
     font-size: 1.8rem;
-    background: #babab7;     
+    background: transparent;     
     padding: 20px 60px;
-    border: none;
+    border: 2px solid;
+    border-color: #babab7;
     border-radius: 50px;
     margin-top: 2rem;
     cursor: pointer;
@@ -427,7 +428,7 @@ input::-webkit-search-cancel-button {
 .main__button a {
     position: relative;
     z-index: 2;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
