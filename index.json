@@ -1,0 +1,173 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ATcYtQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "AGAINST ALL ODDS",
+            "heading_size": "h0"
+          }
+        },
+        "text_BnVdLT": {
+          "type": "text",
+          "settings": {
+            "text": "ETIQUETTE OF MOIRÉ",
+            "text_style": "subtitle"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Explore All",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ATcYtQ",
+        "text_BnVdLT",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/flying_moths_1.gif",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "collection_list_7yDHrJ": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_MidFie": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "malice-collection"
+          }
+        },
+        "featured_collection_NyDwDm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fragile"
+          }
+        },
+        "featured_collection_QzFp7w": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "seized"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_MidFie",
+        "featured_collection_NyDwDm",
+        "featured_collection_QzFp7w"
+      ],
+      "settings": {
+        "title": "Experience Moire",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Exclusive Styles",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "fragile",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_LPHmwB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_UbWYxg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Etiquette",
+            "heading_size": "h1"
+          }
+        },
+        "text_gHfHkq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Create affordable, high fashion for everyone from all walks of life.<\/p><p>Against All Odds. <\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_gUEmeJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UbWYxg",
+        "text_gHfHkq",
+        "button_gUEmeJ"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/against_logo1.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-4",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "collection_list_7yDHrJ",
+    "featured_collection",
+    "image_with_text_LPHmwB"
+  ]
+}
